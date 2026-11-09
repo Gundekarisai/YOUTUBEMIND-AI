@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables - IMPORTANT
+.env
+.env.*
+
+# IDE
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Generated databases and indexes
+database/
+*.faiss
+*.index
+
+# OS files
+.DS_Store
+Thumbs.db
