@@ -158,13 +158,10 @@ def get_transcript(video_url):
         return transcript_data
 
     except Exception as e:
-
-        print("\n--------------------------------")
-        print("TRANSCRIPT EXTRACTION FAILED")
-        print("Error:", repr(e))
-        print("--------------------------------\n")
-
-        return None
+     print("Transcript extraction error:", repr(e))
+    raise RuntimeError(
+        f"Transcript extraction failed: {repr(e)}"
+    ) from e
 
 
 # --------------------------------------------------
