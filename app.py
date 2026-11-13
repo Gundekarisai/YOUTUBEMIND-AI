@@ -510,9 +510,9 @@ if process_button:
 
                 st.success("Video processed successfully!")
 
-        except Exception as e:
+        except Exception as error:
 
-            st.error(f"Processing Error: {e}")
+            st.error(f"Processing Error: {error}")
 
 
 # ==========================================
@@ -669,9 +669,9 @@ else:
                 st.session_state.video_summary = summary
                 st.session_state.summary_type = summary_option
 
-            except Exception as e:
+            except Exception as error:
 
-                st.error(f"Summary Error: {e}")
+                st.error(f"Summary Error: {error}")
 
 
         if st.session_state.video_summary:
@@ -791,9 +791,9 @@ else:
                 # Refresh to display newest conversation at the top
                 st.rerun()
 
-            except Exception as e:
+            except Exception as error:
 
-                st.error(f"AI Error: {e}")
+                st.error(f"AI Error: {error}")
 
         # ==================================
         # CONVERSATION HISTORY
